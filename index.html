@@ -4,796 +4,603 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Md Sohan Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/profile.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Md Sohan - Portfolio</title>
+  <meta name="description"
+    content="Md Sohan - CTO & Senior Full Stack Software Engineer with 6+ years experience supporting 10M+ daily users">
+  <meta name="keywords"
+    content="portfolio, CTO, senior software engineer, full stack developer, PHP, Laravel, MySQL optimization">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/profile.png" alt="" class="img-fluid rounded-circle">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span>MS</span>
     </div>
+  </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Md Sohan</h1>
-    </a>
+  <!-- Header / Top Navbar -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/img/sohan.jpg" alt="Md Sohan" class="logo-img">
+        <h1 class="sitename">Md Sohan</h1>
+      </a>
 
-    <div class="social-links text-center">
-      <a href="https://x.com/SohanHosen8" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="https://www.facebook.com/md.sohan.931569" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/sohanmd381/" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://join.skype.com/invite/XQsvYzwfA5jT" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="https://www.linkedin.com/in/md-sohan7/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/md-sohan7/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/md-sohan719" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.facebook.com/md.sohan.931569" target="_blank" aria-label="Facebook"><i
+              class="bi bi-facebook"></i></a>
+        </div>
+        <i class="mobile-nav-toggle bi bi-list"></i>
+      </div>
     </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/background.JPG" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Md Sohan</h2>
-        <p>I'm <span class="typed" data-typed-items="Web Designer, Full Stack Developer, Freelancer">Web Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <p class="hero-subtitle">Hello, I'm</p>
+            <h1 class="hero-title">Md Sohan</h1>
+            <div class="hero-typed-wrap">
+              <span class="typed-prefix">I'm a&nbsp;</span>
+              <span class="typed"
+                data-typed-items="CTO - Senior Full Stack Engineer,Software Engineer,Full Stack Developer,Backend Specialist"></span>
+              <span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+            </div>
+            <p class="hero-description">Results-driven Web Application Developer with 6+ years of full-stack development
+              and recognized expertise in PHP, Laravel, and MySQL optimization. Supporting 10M+ daily users by cutting
+              server load and improving system performance.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn-hero-primary">Get In Touch</a>
+              <a href="#portfolio" class="btn-hero-secondary">View Work</a>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="hero-img-wrapper">
+                <img src="assets/img/sohan.jpg" alt="Md Sohan" class="hero-profile-img">
+                <div class="hero-img-ring"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
+    <!-- ==================== ABOUT ==================== -->
     <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Introduction</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
-          I'm a full-stack web developer with expertise in HTML, CSS, JavaScript, Bootstrap, jQuery, PHP, CodeIgniter, and Laravel. 
-          My academic foundation is in Mathematics, having completed a BSC Honors in the subject. 
-          This background equips me with strong analytical and problem-solving skills, which I apply in creating efficient and effective web solutions.
-      </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/sohan.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              I create beautiful and functional websites using modern technologies.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20 May 1999</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>01845173032</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tangail, Bangladesh</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSC Honors (Mathematics) </span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sohanmd381@gamil.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-img-wrap">
+              <img src="assets/img/sohan.jpg" class="img-fluid" alt="Md Sohan">
+              <div class="about-img-badge">
+                <span class="badge-number">6+</span>
+                <span class="badge-text">Years<br>Experience</span>
               </div>
             </div>
-            <p class="py-3">
-              I am passionate about technology and its ability to solve real-world problems, and I strive to deliver user-friendly, 
-              responsive, and innovative web applications.
-            </p>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="about-content">
+              <h3>CTO - Senior Full Stack Software Engineer</h3>
+              <p class="about-lead">Results-driven Web Application Developer with 6+ years of full-stack development
+                and recognized expertise in PHP, Laravel, MySQL optimization, and team leadership. Currently serving as
+                CTO at BDStall.com LTD, supporting 10M+ daily users through cutting server load, query optimization, and
+                AI-driven automation.</p>
+
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Phone</span>
+                  <span class="info-value">+880 1635-472997</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email</span>
+                  <span class="info-value">sohanmd38@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Rangpur, Dhaka</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Degree</span>
+                  <span class="info-value">BSc (Hons) Mathematics, 2019-2024</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Speciality</span>
+                  <span class="info-value">MySQL Optimization, Laravel, API Dev</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Status</span>
+                  <span class="info-value available">Available for Hire</span>
+                </div>
+              </div>
+
+              <p class="about-text">Currently leading the IT team at BDStall.com LTD where I improved API speed by 40%
+                through optimized endpoints and DB tuning, enhanced search performance using sparse search optimization,
+                and boosted form efficiency by integrating AI into the data entry process. Strong focus on client
+                communication, teamwork, and problem-solving.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row stats-row" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-3 col-6">
+            <div class="stat-card">
+              <span class="stat-number">10M+</span>
+              <p class="stat-label">Daily Users Supported</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card">
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1"
+                class="purecounter stat-number"></span><span class="stat-number-plus">+</span>
+              <p class="stat-label">Years Experience</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card">
+              <span class="stat-number">40%</span>
+              <p class="stat-label">API Speed Improvement</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-card">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                class="purecounter stat-number"></span><span class="stat-number-plus">+</span>
+              <p class="stat-label">Projects Completed</p>
+            </div>
           </div>
         </div>
 
       </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>Exceptional experiences</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>Delivered with quality</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>Always available</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>Dedicated team</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">What I Know</span>
+          <h2 class="section-title">My Skills</h2>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>My expertise spans across multiple domains, ensuring exceptional quality and precision</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
+        <div class="row skills-content skills-animation" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <span class="skill"><span>PHP & Laravel</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">100%</i></span>
+              <span class="skill"><span>MySQL Optimization & Query Tuning</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>Bootstrap</span> <i class="val">100%</i></span>
+              <span class="skill"><span>JavaScript & jQuery</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">90%</i></span>
+              <span class="skill"><span>REST API Development & Integration</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
           </div>
-
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>jQuery</span> <i class="val">95%</i></span>
+              <span class="skill"><span>CodeIgniter Framework</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">100%</i></span>
+              <span class="skill"><span>PostgreSQL & Database Architecture</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>CodeIgniter - 3</span> <i class="val">100%</i></span>
+              <span class="skill"><span>AI Integration & Automation</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill"><span>Laravel</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Sphinx Search & Optimization</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
+
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-    <!-- Resume Section -->
+    <!-- ==================== RESUME ==================== -->
     <section id="resume" class="resume section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>A summary of my professional journey, showcasing education, skills, and project achievements.</p>
-      </div>
-      <!-- End Section Title -->
-
       <div class="container">
-        <div class="row">
-          <!-- Left Column: Summary and Education -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- Summary -->
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Md. Sohan</h4>
-              <p>
-                <em>
-                  A dedicated and detail-oriented developer with a passion for creating efficient and user-friendly systems. Experienced in managing projects from concept to deployment.
-                </em>
-              </p>
-              <ul>
-                <li>Tangail, Bangladesh</li>
-                <li>01845173032</li>
-                <li>sohanmd381@gmail.com</li>
-              </ul>
-            </div>
-
-            <!-- Education -->
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>B.Sc. Honors in Mathematics</h4>
-              <h5>2024</h5>
-              <p><em>Rajbari Govt. College, Rajbari, Bangladesh</em></p>
-              <p>
-                Focused on analytical problem-solving and mathematical modeling, complemented by software application development skills.
-              </p>
-            </div>
-          </div>
-
-          <!-- Right Column: Professional Experience and Projects -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <!-- Projects -->
-            <h3 class="resume-title">Projects</h3>
-            <div class="resume-item">
-              <h4>Doctor Dairy Project</h4>
-              <p><em>2020</em></p>
-              <ul>
-                <li>Developed a comprehensive system for managing patient records and doctor schedules.</li>
-                <li>Features include appointment booking, medical history tracking, and prescription management.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Store Management Project</h4>
-              <p><em>2021</em></p>
-              <ul>
-                <li>Designed and implemented an inventory tracking system for efficient stock management.</li>
-                <li>Incorporated real-time reporting and analytics for business insights.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>E-commerce Platform</h4>
-              <p><em>2022</em></p>
-              <ul>
-                <li>Developed a fully functional online store with features like product listing, cart management, and secure payment gateway.</li>
-                <li>Optimized user experience through responsive design and intuitive navigation.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Hospital Management System</h4>
-              <p><em>2023</em></p>
-              <ul>
-                <li>Built a system to manage hospital operations, including patient admissions, billing, and staff scheduling.</li>
-                <li>Integrated modules for record-keeping, resource allocation, and performance tracking.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Jute Mill Management System</h4>
-              <p><em>2024</em></p>
-              <ul>
-                <li>Created a system for streamlining production processes and workforce management.</li>
-                <li>Enhanced operational efficiency through automated reporting and scheduling tools.</li>
-              </ul>
-            </div>
-          </div>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">My Journey</span>
+          <h2 class="section-title">Resume</h2>
         </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="resume-block">
+              <h3 class="resume-heading"><i class="bi bi-person-lines-fill"></i> Summary</h3>
+              <div class="resume-card">
+                <h4>Md Sohan</h4>
+                <p>Results-driven Web Application Developer with 6+ years of full-stack development and recognized
+                  expertise in PHP, Laravel, and MySQL optimization. Strong expertise in client communication, teamwork,
+                  and problem-solving, delivering solutions for institutions and e-commerce platforms.</p>
+                <ul class="resume-details">
+                  <li><i class="bi bi-geo-alt"></i> Rangpur, Dhaka</li>
+                  <li><i class="bi bi-telephone"></i> +880 1635-472997</li>
+                  <li><i class="bi bi-envelope"></i> sohanmd38@gmail.com</li>
+                  <li><i class="bi bi-linkedin"></i> linkedin.com/in/md-sohan7</li>
+                  <li><i class="bi bi-github"></i> github.com/md-sohan719</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h3 class="resume-heading"><i class="bi bi-mortarboard"></i> Education</h3>
+              <div class="resume-card">
+                <div class="resume-date">2019 - 2024</div>
+                <h4>B.Sc. (Honours) in Mathematics</h4>
+                <p class="resume-place"><i class="bi bi-building"></i> Rajbari Government College</p>
+                <p>Strong foundation in analytical thinking, problem-solving, and logical reasoning, which I apply to
+                  web development and software engineering.</p>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h3 class="resume-heading"><i class="bi bi-trophy"></i> Key Achievements</h3>
+              <div class="resume-card">
+                <h4>Performance Optimization</h4>
+                <ul class="resume-achievements">
+                  <li>Improved API speed by 40% with optimized endpoints and DB tuning</li>
+                  <li>Support 10M+ daily users by cutting server load through MySQL redesign</li>
+                  <li>Enhanced search performance using sparse search optimization</li>
+                  <li>Boosted form efficiency by integrating AI into data entry process</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="resume-block">
+            <h3 class="resume-heading"><i class="bi bi-briefcase"></i> Experience</h3>
+
+            <div class="resume-card">
+              <div class="resume-date">May 2023 - Present</div>
+              <h4>CTO - Senior Full Stack Software Engineer</h4>
+              <p class="resume-place"><i class="bi bi-building"></i> BDStall.com LTD</p>
+              <ul>
+                <li>Supported 10M+ daily users by cutting server load through MySQL redesign and query optimization</li>
+                <li>Improved API speed by 40% with optimized endpoints and DB tuning</li>
+                <li>Enhanced search performance using sparse search optimization</li>
+                <li>Improved reports by automating batch processing</li>
+                <li>Boosted form efficiency by integrating AI into the data entry process</li>
+                <li>Led the IT team on CTO, improving workflow optimization</li>
+              </ul>
+            </div>
+
+            <div class="resume-card">
+              <div class="resume-date">2020 - 2024</div>
+              <h4>Full Stack Software Engineer</h4>
+              <p class="resume-place"><i class="bi bi-building"></i> Wake Up ICT Institute</p>
+              <ul>
+                <li>Skilled in PHP, CodeIgniter, Laravel for scalable back-end systems</li>
+                <li>Designed and developed dynamic web apps using Laravel and CodeIgniter</li>
+                <li>Proficient in Bootstrap, Tailwind, HTML, CSS, JS, jQuery for responsive UI</li>
+                <li>Created responsive front-end interfaces with modern frameworks</li>
+                <li>Integrated RESTful APIs and handled back-end logic using PHP & MySQL</li>
+                <li>Experienced in MySQL query optimization and Git version control</li>
+                <li>Completed 10+ projects, including a govt. project as mentor</li>
+              </ul>
+            </div>
+
+            <div class="resume-card">
+              <div class="resume-date">2020 - 2023</div>
+              <h4>Backend Software Engineer</h4>
+              <p class="resume-place"><i class="bi bi-building"></i> Upwork (Freelance)</p>
+              <ul>
+                <li>Built custom web apps with PHP, Laravel, CodeIgniter for client projects</li>
+                <li>Designed responsive UIs using Bootstrap, Tailwind, HTML, CSS, JS, jQuery</li>
+                <li>Integrated APIs and optimized MySQL for performance</li>
+                <li>Automated workflows and added AI features for efficiency</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
       </div>
     </section>
 
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Explore some of my work in programming, development, design, and applications. Each project reflects my dedication to creating impactful solutions and designs.</p>
-      </div>
-
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section id="portfolio" class="portfolio section">
       <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">My Work</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Programming</li>
-            <li data-filter=".filter-product">Development</li>
-            <li data-filter=".filter-branding">Design</li>
-            <li data-filter=".filter-books">Application</li>
+            <li data-filter=".filter-web">Web App</li>
+            <li data-filter=".filter-design">Design</li>
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Programming Project 1</h4>
-                  <p>Custom algorithm implementation for real-time data processing.</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <!-- E-Commerce Website -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-content">
+                  <div class="portfolio-icon"><i class="bi bi-cart"></i></div>
+                  <span class="portfolio-category">Web Application</span>
+                  <h4>E-Commerce Platform</h4>
+                  <p class="portfolio-desc">Full-featured e-commerce website with product catalog, shopping cart,
+                    payment gateway integration, and admin dashboard built with Laravel framework.</p>
+                  <div class="portfolio-tech">
+                    <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>jQuery</span>
+                  </div>
+                  <div class="portfolio-actions">
+                    <a href="https://github.com/md-sohan719" target="_blank" title="GitHub"><i class="bi bi-github"></i>
+                      GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Development Project 1</h4>
-                  <p>End-to-end e-commerce web application with secure payment integration.</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <!-- Business Website -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-content">
+                  <div class="portfolio-icon"><i class="bi bi-briefcase"></i></div>
+                  <span class="portfolio-category">Website</span>
+                  <h4>Corporate Business Website</h4>
+                  <p class="portfolio-desc">Responsive corporate website with modern design, contact forms, and service
+                    pages. Built with HTML5, CSS3, JavaScript, and Bootstrap framework.</p>
+                  <div class="portfolio-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                  </div>
+                  <div class="portfolio-actions">
+                    <a href="https://github.com/md-sohan719" target="_blank" title="GitHub"><i class="bi bi-github"></i>
+                      GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design Project 1</h4>
-                  <p>Creative branding and logo design for a tech startup.</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <!-- CMS Application -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-content">
+                  <div class="portfolio-icon"><i class="bi bi-file-text"></i></div>
+                  <span class="portfolio-category">Web Application</span>
+                  <h4>Content Management System</h4>
+                  <p class="portfolio-desc">Custom CMS built with CodeIgniter for managing website content, users, and
+                    SEO. Features include WYSIWYG editor and media management.</p>
+                  <div class="portfolio-tech">
+                    <span>CodeIgniter</span><span>PHP</span><span>MySQL</span><span>jQuery</span>
+                  </div>
+                  <div class="portfolio-actions">
+                    <a href="https://github.com/md-sohan719" target="_blank" title="GitHub"><i class="bi bi-github"></i>
+                      GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Application Project 1</h4>
-                  <p>Mobile application for task management with offline capabilities.</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <!-- Portfolio Website -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <div class="portfolio-card">
+                <div class="portfolio-content">
+                  <div class="portfolio-icon"><i class="bi bi-palette"></i></div>
+                  <span class="portfolio-category">Website Design</span>
+                  <h4>Portfolio Website</h4>
+                  <p class="portfolio-desc">Modern and responsive portfolio website with smooth animations, project
+                    galleries, and contact forms. Fully responsive and SEO optimized.</p>
+                  <div class="portfolio-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AOS</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Programming Project 2</h4>
-                  <p>Custom algorithm implementation for real-time data processing.</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <!-- REST API -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-content">
+                  <div class="portfolio-icon"><i class="bi bi-code-square"></i></div>
+                  <span class="portfolio-category">Backend</span>
+                  <h4>RESTful API Service</h4>
+                  <p class="portfolio-desc">Scalable REST API built with Laravel for mobile and web applications.
+                    Includes authentication, rate limiting, and comprehensive documentation.</p>
+                  <div class="portfolio-tech">
+                    <span>Laravel</span><span>REST API</span><span>JWT</span><span>MySQL</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Development Project 2</h4>
-                  <p>End-to-end e-commerce web application with secure payment integration.</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design Project 2</h4>
-                  <p>Creative branding and logo design for a tech startup.</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Application Project 2</h4>
-                  <p>Mobile application for task management with offline capabilities.</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Programming Project 3</h4>
-                  <p>Custom algorithm implementation for real-time data processing.</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Development Project 3</h4>
-                  <p>End-to-end e-commerce web application with secure payment integration.</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design Project 3</h4>
-                  <p>Creative branding and logo design for a tech startup.</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Application Project 3</h4>
-                  <p>Mobile application for task management with offline capabilities.</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-      <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Here are the professional services I offer, tailored to meet client needs with precision and excellence.</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Web Development</a></h4>
-              <p class="description">Creating responsive and dynamic websites using the latest technologies to enhance user experience and engagement.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-shop-window"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">E-commerce Solutions</a></h4>
-              <p class="description">Developing robust e-commerce platforms with secure payment gateways and seamless user interfaces.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">System Development</a></h4>
-              <p class="description">Designing and implementing customized systems for industries, including hospital and store management systems.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Software Development</a></h4>
-              <p class="description">Building software solutions tailored to streamline workflows and improve operational efficiency.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Data Analysis</a></h4>
-              <p class="description">Providing actionable insights through data analysis and visualization for informed decision-making.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Technical Support</a></h4>
-              <p class="description">Offering reliable technical support to ensure smooth operation and maintenance of your systems and applications.</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-        </div>
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Here's what my clients and colleagues say about working with me.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Working with Sohan was a fantastic experience. They delivered exceptional results that exceeded my expectations.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Md Sohan is highly skilled and professional. The project was completed on time, and the results were outstanding!</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>The attention to detail and dedication Mr. Sohan brings to every project is truly impressive. Highly recommended!</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Truly a pleasure working with Mr. Sohan. Their expertise and professionalism were top-notch throughout the project.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Mr. Sohan dedication and expertise are unmatched. I couldn't have asked for a better collaborator on this project.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Contact Section -->
+    <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with me for any inquiries, collaborations, or project discussions. I'm here to help!</p>
-      </div><!-- End Section Title -->
+        <div class="row gy-5">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Tangail, Dhaka, Bangladesh</p>
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="bi bi-geo-alt"></i>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Me</h3>
-                  <p>+8801845173032</p>
+                  <h4>Location</h4>
+                  <p>Rangpur, Dhaka</p>
                 </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="bi bi-telephone"></i>
+                </div>
                 <div>
-                  <h3>Email Me</h3>
-                  <p>sohanmd381@gmail.com</p>
+                  <h4>Phone</h4>
+                  <p>+880 1635-472997</p>
                 </div>
-              </div><!-- End Info Item -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d269.8149730519955!2d90.04265684242306!3d24.513745957505225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37561f7a13803ad5%3A0xe1c4b559b44d5ba2!2sNalma%20Bazar%20Jame%20Masjid!5e0!3m2!1sen!2sbd!4v1737610916193!5m2!1sen!2sbd" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>sohanmd38@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231558.98621107894!2d89.10485587810967!3d25.743155499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1708345200000!5m2!1sen!2sbd"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form contact-form">
               <div class="row gy-4">
-
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <label for="name-field">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <label for="email-field">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
-
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <label for="subject-field">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
-
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <label for="message-field">Message</label>
+                  <textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <button type="submit"><i class="bi bi-send"></i> Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 <strong>Md Sohan</strong>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-chevron-up"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -805,9 +612,8 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
