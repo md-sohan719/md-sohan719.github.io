@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Md Sohan - CV / Resume</title>
+  <meta name="description"
+    content="Md Sohan - Senior Software Engineer. ATS-friendly CV / Resume. Full-stack development with PHP, Laravel, CodeIgniter, Vue.js, and MySQL optimization.">
+  <meta name="author" content="Md Sohan">
+
+  <!-- Clean, ATS-safe web font with a robust system fallback -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       ATS-FRIENDLY CV  —  Single column, full white background,
+       real selectable text, blue links, print/Save-as-PDF.
+       Styled after a clean single-column resume layout.
+       ============================================================ */
+
+    :root {
+      --ink: #1b1b1b;
+      --muted: #3d3d3d;
+      --soft: #666;
+      --line: #d8d8d8;
+      --link: #0a66c2;
+      --accent: #14385f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      background: #eef0f2;
+      color: var(--ink);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* -------- Toolbar (screen only) -------- */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .06);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s ease;
+      background: #fff;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(20, 56, 95, .25);
+      text-decoration: none;
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* -------- Page sheet -------- */
+    .sheet {
+      background: #ffffff;
+      /* FULL WHITE */
+      width: 210mm;
+      max-width: 100%;
+      margin: 24px auto;
+      padding: 22mm 20mm;
+      box-shadow: 0 2px 18px rgba(0, 0, 0, .12);
+    }
+
+    /* -------- Header -------- */
+    header.cv-head {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 18px;
+    }
+
+    .head-text {
+      flex: 1;
+    }
+
+    .cv-name {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: .3px;
+      color: var(--ink);
+      line-height: 1.05;
+    }
+
+    .cv-role {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 3px;
+      letter-spacing: .3px;
+    }
+
+    .contact {
+      margin-top: 11px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .contact span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .contact span:not(:last-child)::after {
+      content: "•";
+      color: #bbb;
+      margin: 0 9px;
+    }
+
+    .photo {
+      width: 116px;
+      height: 116px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* -------- Sections -------- */
+    section {
+      margin-top: 18px;
+    }
+
+    .sec-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 5px;
+      margin-bottom: 11px;
+    }
+
+    p.summary {
+      color: var(--muted);
+      font-style: italic;
+      text-align: justify;
+    }
+
+    /* -------- Key skills one-liner (pipe separated) -------- */
+    p.keyskills {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    p.keyskills b {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* -------- Experience / Education entries -------- */
+    .entry {
+      margin-bottom: 15px;
+      page-break-inside: avoid;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .entry-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .entry-date {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--soft);
+      white-space: nowrap;
+    }
+
+    .entry-org {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    ul.bullets {
+      list-style: none;
+      margin-top: 7px;
+    }
+
+    ul.bullets li {
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    ul.bullets li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* -------- Skills grid -------- */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 28px;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 8px;
+      font-size: 13.5px;
+      padding: 3px 0;
+      border-bottom: 1px dotted #eee;
+    }
+
+    .skill-row b {
+      min-width: 96px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .skill-row span {
+      color: var(--muted);
+    }
+
+    /* -------- Two-column compact (Education / Languages) -------- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 26px;
+    }
+
+    .inline-list {
+      list-style: none;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .inline-list li {
+      padding: 2px 0;
+    }
+
+    .inline-list b {
+      color: var(--ink);
+    }
+
+    /* -------- Reference -------- */
+    .reference b {
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .reference p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    /* -------- Affirmation -------- */
+    .affirm {
+      margin-top: 18px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      font-style: italic;
+      color: var(--soft);
+    }
+
+    .foot {
+      margin-top: 14px;
+      font-size: 11.5px;
+      color: #999;
+      text-align: center;
+    }
+
+    /* ============================================================
+       PRINT  —  hide UI, full white, tight margins, no shadows.
+       ============================================================ */
+    @media print {
+
+      html,
+      body {
+        background: #ffffff !important;
+        font-size: 10.5pt;
+      }
+
+      .toolbar,
+      .no-print {
+        display: none !important;
+      }
+
+      .sheet {
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      /* Only keep individual entries together; let the section flow/split
+         across pages so we don't leave half-empty pages. */
+      .entry {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      /* Never orphan a heading at the bottom of a page. */
+      .sec-title {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+
+      /* Compact spacing for a tight, ~2-page print. */
+      header.cv-head {
+        padding-bottom: 12px;
+        gap: 18px;
+      }
+
+      .photo {
+        width: 94px;
+        height: 94px;
+        border-width: 2px;
+      }
+
+      section {
+        margin-top: 13px;
+      }
+
+      .entry {
+        margin-bottom: 10px;
+      }
+
+      ul.bullets li {
+        margin-bottom: 3px;
+      }
+
+      .affirm {
+        margin-top: 14px;
+      }
+
+      @page {
+        size: A4;
+        margin: 13mm;
+      }
+    }
+
+    /* -------- Mobile (screen only — must NOT affect print) -------- */
+    @media screen and (max-width: 700px) {
+      .sheet {
+        padding: 22px 18px;
+        margin: 12px auto;
+      }
+
+      header.cv-head {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 14px;
+      }
+
+      .contact {
+        justify-content: center;
+      }
+
+      .skill-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .cv-name {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= TOOLBAR (screen only) ================= -->
+  <div class="toolbar no-print">
+    <button class="btn btn-primary" onclick="window.print()" aria-label="Print or save CV as PDF">
+      <svg viewBox="0 0 16 16"><path d="M5 1a1 1 0 0 0-1 1v3h8V2a1 1 0 0 0-1-1H5zM2 6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-2h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H2zm10 6v2H4v-3h8v1zm1-3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/></svg>
+      Print / Save as PDF
+    </button>
+    <a class="btn" href="index.html">
+      <svg viewBox="0 0 16 16"><path d="M11.5 1.5 5 8l6.5 6.5L13 13 8 8l5-5z"/></svg>
+      Back to Portfolio
+    </a>
+  </div>
+
+  <!-- ================= CV SHEET ================= -->
+  <main class="sheet" id="cv">
+
+    <header class="cv-head">
+      <div class="head-text">
+        <div class="cv-name">Md Sohan</div>
+        <div class="cv-role">Senior Software Engineer</div>
+        <div class="contact">
+          <span>Rampura, Dhaka, Bangladesh</span>
+          <span>+880 1635-472997</span>
+          <span><a href="mailto:sohanmd381@gmail.com">sohanmd381@gmail.com</a></span>
+          <span><a href="https://sohandev.me" target="_blank">sohandev.me</a></span>
+          <span><a href="https://github.com/md-sohan719" target="_blank">github.com/md-sohan719</a></span>
+          <span><a href="https://www.linkedin.com/in/md-sohan7/" target="_blank">linkedin.com/in/md-sohan7</a></span>
+        </div>
+      </div>
+      <img class="photo" src="assets/img/sohan_profile.png" alt="Md Sohan">
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+      <h2 class="sec-title">Professional Summary</h2>
+      <p class="summary">Results-driven Web Application Developer with extensive experience in full-stack development,
+        API integration, and scalable system design using CodeIgniter and Laravel. Strong in client communication,
+        teamwork, and problem-solving, with a proven record delivering solutions for hospitals, educational institutes,
+        and e-commerce platforms.</p>
+    </section>
+
+    <!-- CAREER HIGHLIGHTS -->
+    <section>
+      <h2 class="sec-title">Career Highlights</h2>
+      <ul class="bullets">
+        <li>6+ years of full-stack development across e-commerce, healthcare, and education platforms.</li>
+        <li>Engineered high-traffic systems supporting <b>1M+ daily users</b> through MySQL redesign and query optimization.</li>
+        <li>Improved API performance by <b>30%</b> and accelerated search using Sphinx Search optimization.</li>
+        <li>Delivered <b>10+ production projects</b> and led an IT team as CTO.</li>
+      </ul>
+    </section>
+
+    <!-- KEY SKILLS (one-liner) -->
+    <section>
+      <h2 class="sec-title">Key Skills</h2>
+      <p class="keyskills">
+        <b>PHP</b> | <b>Laravel</b> | <b>CodeIgniter</b> | JavaScript | jQuery | <b>Vue.js</b> | Inertia.js |
+        Tailwind CSS | Bootstrap | <b>MySQL</b> | PostgreSQL | <b>REST API Development</b> |
+        AI System Integration | Meilisearch | Sphinx Search | Query Optimization | Git | Cronjobs | Task Automation
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2 class="sec-title">Professional Experience</h2>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">CTO &amp; Senior Full Stack Software Engineer</span>
+          <span class="entry-date">May 2025 – Present</span>
+        </div>
+        <div class="entry-org">BDStall.com LTD — Dhaka, Bangladesh</div>
+        <ul class="bullets">
+          <li>Supported 1M+ daily users by cutting server load through MySQL redesign and query optimization.</li>
+          <li>Improved API speed by 30% with optimized endpoints and database tuning.</li>
+          <li>Enhanced search performance using Sphinx Search optimization.</li>
+          <li>Improved reliability by automating tasks with cronjobs.</li>
+          <li>Boosted form efficiency by integrating AI into the listing entry process.</li>
+          <li>Led the IT team as CTO, improving workflow and delivery.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Full Stack Software Engineer</span>
+          <span class="entry-date">2020 – 2024</span>
+        </div>
+        <div class="entry-org">Wake Up ICT Institute</div>
+        <ul class="bullets">
+          <li>Built scalable back-end systems using PHP, CodeIgniter, and Laravel.</li>
+          <li>Designed and developed dynamic web apps using Laravel and CodeIgniter.</li>
+          <li>Created responsive front-end interfaces with Bootstrap, Tailwind, HTML, CSS, JS, and jQuery.</li>
+          <li>Integrated RESTful APIs and handled back-end logic using PHP and MySQL.</li>
+          <li>Applied MySQL query optimization and used Git for version control.</li>
+          <li>Completed 10+ projects, including a government project served as a mentor.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-top">
+          <span class="entry-title">Backend Software Engineer (Freelance)</span>
+          <span class="entry-date">2020 – 2023</span>
+        </div>
+        <div class="entry-org">Upwork — Remote</div>
+        <ul class="bullets">
+          <li>Built custom web apps with PHP, Laravel, and CodeIgniter for client projects.</li>
+          <li>Designed responsive UIs using Bootstrap, Tailwind, HTML, CSS, JS, and jQuery.</li>
+          <li>Integrated APIs and optimized MySQL for performance.</li>
+          <li>Automated workflows and added AI features for efficiency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2 class="sec-title">Projects</h2>
+      <ul class="bullets">
+        <li><b>E-Commerce Platform</b> — Product catalog, shopping cart, payment gateway, and admin dashboard. <i>(Laravel, PHP, MySQL, Bootstrap, jQuery)</i></li>
+        <li><b>RESTful API Service</b> — Scalable REST API with authentication, rate limiting, and documentation. <i>(Laravel, REST API, JWT, MySQL)</i></li>
+        <li><b>Content Management System</b> — Custom CMS for content, users, and SEO with WYSIWYG editor and media management. <i>(CodeIgniter, PHP, MySQL, jQuery)</i></li>
+        <li><b>Corporate Business Website</b> — Responsive corporate site with service pages and contact forms. <i>(HTML, CSS, JavaScript, Bootstrap)</i></li>
+      </ul>
+    </section>
+
+    <!-- TECHNICAL SKILLS (categorised) -->
+    <section>
+      <h2 class="sec-title">Technical Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-row"><b>Core</b><span>PHP, JavaScript, Laravel, CodeIgniter</span></div>
+        <div class="skill-row"><b>Frontend</b><span>Vue.js, Inertia.js, Tailwind CSS, Bootstrap, jQuery</span></div>
+        <div class="skill-row"><b>Database</b><span>MySQL, PostgreSQL, Query Optimization</span></div>
+        <div class="skill-row"><b>Specialized</b><span>API Development, AI System Integration, Meilisearch</span></div>
+        <div class="skill-row"><b>DevOps</b><span>Git, Cronjobs, Task Automation</span></div>
+        <div class="skill-row"><b>Strengths</b><span>Backend architecture, Query tuning, Team leadership</span></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + LANGUAGES -->
+    <div class="two-col">
+      <section>
+        <h2 class="sec-title">Education</h2>
+        <div class="entry">
+          <div class="entry-top">
+            <span class="entry-title">B.Sc. (Honours) in Mathematics</span>
+            <span class="entry-date">2019 – 2024</span>
+          </div>
+          <div class="entry-org">Rajbari Government College</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title">Languages</h2>
+        <ul class="inline-list">
+          <li><b>Bangla</b> — Native</li>
+          <li><b>English</b> — Professional</li>
+          <li><b>Hindi</b> — Conversational</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- REFERENCE -->
+    <section class="reference">
+      <h2 class="sec-title">Reference</h2>
+      <b>Md Riasath Arif Prodhan (Shuvro)</b>
+      <p>Lead Software Engineer, Codefix IT, Dhaka, Bangladesh</p>
+      <p>Email: <a href="mailto:Riasatharif@gmail.com">Riasatharif@gmail.com</a></p>
+    </section>
+
+    <p class="affirm">I affirm that all presented information is accurate to the best of my knowledge, and I can
+      provide authentic certificates or documentation as needed.</p>
+
+  </main>
+
+</body>
+
+</html>
